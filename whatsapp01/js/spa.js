@@ -1,4 +1,4 @@
-var app = angular.module('customersApp',['ngRoute']);
+var app = angular.module('spaApp',['ngRoute']);
 app.config(function($routeProvider) {
   $routeProvider.when('/',
     {
@@ -20,15 +20,15 @@ app.config(function($routeProvider) {
         controller: 'ContactController',
         templateUrl: 'app/views/contact.html'
       })
-   .when('/story',
+   .when('/about',
       {
         controller: 'StoryController',
-        templateUrl: 'app/views/story.html'
+        templateUrl: 'app/views/About.html'
       })
-  .when('/adam',
+  .when('/services',
      {
        controller: 'AdamController',
-       templateUrl: 'app/views/adam.html'
+       templateUrl: 'app/views/sevices.html'
      })
 });
 app.controller('WorksController', function($scope){
